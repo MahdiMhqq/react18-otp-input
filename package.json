@@ -21,7 +21,8 @@
     "input",
     "code",
     "passcode",
-    "component"
+    "component",
+    "react 18"
   ],
   "peerDependencies": {
     "react": "^18.1.0",
