@@ -4,8 +4,6 @@ import ReactDOM from 'react-dom/client';
 import OtpInput from '../../lib';
 import './styles.css';
 
-import React from 'react'
-
 function Demo() {
   const [states, setStates] = useState({
     otp: '',
@@ -18,19 +16,19 @@ function Demo() {
     minLength: 0,
     maxLength: 40,
     placeholder: '',
-  })
+  });
 
-  handleOtpChange = (otp) => {
-    setStates(prev => ({...prev, otp }));
+  const handleOtpChange = (otp) => {
+    setStates((prev) => ({ ...prev, otp }));
   };
 
-  handleChange = (e) => {
-    setStates(prev => ({...prev, [e.target.name]: e.target.value }));
+  const handleChange = (e) => {
+    setStates((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  handleNumInputsChange = (e) => {
+  const handleNumInputsChange = (e) => {
     let numInputs = e.target.value;
-    const { minLength, maxLength } = state;
+    const { minLength, maxLength } = states;
 
     if (numInputs < minLength || numInputs > maxLength) {
       numInputs = 4;
@@ -38,21 +36,21 @@ function Demo() {
       console.error(`Please enter a value between ${minLength} and ${maxLength}`);
     }
 
-    setStates(prev => ({...prev, [e.target.name]: parseInt(numInputs, 10) }));
+    setStates((prev) => ({ ...prev, [e.target.name]: parseInt(numInputs, 10) }));
   };
 
-  clearOtp = () => {
-    setStates(prev => ({...prev, otp: '' }));
+  const clearOtp = () => {
+    setStates((prev) => ({ ...prev, otp: '' }));
   };
 
-  handleCheck = (e) => {
+  const handleCheck = (e) => {
     const { name } = e.target;
-    setState(prev => ({...prev, [name]: !prevState[name] }));
+    setStates((prev) => ({ ...prev, [name]: !prev[name] }));
   };
 
-  handleSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    alert(state.otp);
+    alert(states.otp);
   };
 
   return (
@@ -63,6 +61,9 @@ function Demo() {
             <h2>react18-otp-input</h2>
           </div>
         </a>
+        <div className="side-bar__segment side-bar__segment--bottom">
+          <a href="https://github.com/mahdimhqq/react18-otp-input">Documentation and Source</a>
+        </div>
         <div className="side-bar__segment">
           <label htmlFor="num-inputs">
             numInputs
@@ -93,7 +94,14 @@ function Demo() {
         <div className="side-bar__segment">
           <label htmlFor="value">
             value
-            <input id="value" maxLength={states.numInputs} name="otp" type="text" value={states.otp} onChange={handleChange} />
+            <input
+              id="value"
+              maxLength={states.numInputs}
+              name="otp"
+              type="text"
+              value={states.otp}
+              onChange={handleChange}
+            />
           </label>
         </div>
         <div className="side-bar__segment">
@@ -144,9 +152,6 @@ function Demo() {
             isInputSecure
           </label>
         </div>
-        <div className="side-bar__segment side-bar__segment--bottom">
-          <a href="https://github.com/mahdimhqq/react18-otp-input">Documentation and Source</a>
-        </div>
       </div>
       <div className="view">
         <div className="card">
@@ -194,4 +199,3 @@ app.render(
     <Demo />
   </React.StrictMode>
 );
-

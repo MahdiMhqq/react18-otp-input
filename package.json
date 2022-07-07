@@ -8,7 +8,7 @@
     "build": "babel src/lib -d lib",
     "build:watch": "babel src/lib -w -d lib",
     "demo:dev": "webpack-dev-server --mode development",
-    "demo:build": "webpack --mode production",
+    "demo:build": "webpack --openssl-legacy-provider --mode production",
     "format": "prettier --write \"**/*.{html,css,js,jsx}\"",
     "lint": "eslint 'src/**/*.{js,jsx}' --quiet",
     "lint:fix": "eslint 'src/**/*.{js,jsx}' --fix",
