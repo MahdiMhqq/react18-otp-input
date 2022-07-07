@@ -1,10 +1,16 @@
 # react18-otp-input
+[![npm version](https://badge.fury.io/js/react18-otp-input.svg)](https://badge.fury.io/js/react18-otp-input) [![npm](https://img.shields.io/npm/dw/react-otp-input.svg?logo=npm)](https://www.npmjs.com/package/react18-otp-input) [![npm](https://img.shields.io/bundlephobia/minzip/react18-otp-input)](https://www.npmjs.com/package/react18-otp-input)
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 A fully customizable, one-time password input component for the web built with React. This package is based on great work of contributers of `react-otp-input`. But i needed this package and for unknown reasons the contributers of the original package does not accept the open PRs that solve the _REACT 18_ dependency problem. So based on The PR [here](https://github.com/devfolioco/react-otp-input/pull/347) i created this package for the others who need this.
 To see the original package [Click](https://github.com/devfolioco/react-otp-input)
 
-[CodeSandbox]() _Soon..._
+[CodeSandbox](https://codesandbox.io/s/react18-otp-input-demo-j7z0bk?file=/public/index.html)
 
+## Installation
+[![NPM](https://nodei.co/npm/react18-otp-input.png)](https://nodei.co/npm/react18-otp-input/)
 #### To install the latest stable version:
 
 ```
