@@ -3,9 +3,7 @@
 A fully customizable, one-time password input component for the web built with React. This package is based on great work of contributers of `react-otp-input`. But i needed this package and for unknown reasons the contributers of the original package does not accept the open PRs that solve the _REACT 18_ dependency problem. So based on The PR [here](https://github.com/devfolioco/react-otp-input/pull/347) i created this package for the others who need this.
 To see the original package [Click](https://github.com/devfolioco/react-otp-input)
 
-[Live Demo]()
-
-[CodeSandbox]()
+[CodeSandbox]() _Soon..._
 
 #### To install the latest stable version:
 
