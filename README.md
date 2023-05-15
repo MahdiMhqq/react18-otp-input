@@ -1,3 +1,5 @@
+# DEPRECATED # Install this one: [react-otp-input](https://github.com/devfolioco/react-otp-input)
+
 # react18-otp-input
 
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/mahdimhqq/react18-otp-input?color=g)
