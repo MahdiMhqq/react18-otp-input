@@ -1,4 +1,5 @@
-# DEPRECATED # Install this one: [react-otp-input](https://github.com/devfolioco/react-otp-input)
+# /* NOTICE: *******************************/
+# DEPRECATED - Install this one: [react-otp-input](https://github.com/devfolioco/react-otp-input)
 
 # react18-otp-input
 
